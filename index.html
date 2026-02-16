@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="description" content="Página hecha por fans de la fórmula 1">
+    <meta name="keywords" content="F1, Fórmula 1, Racing, Apex Racing Hub, Pilotos, Equipos, Noticias, Calendario, Clasificación">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Racing Hub | Fan Experience</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">APEX RACING HUB</div>
+        <nav>
+            <button onclick="showPage('inicio')">Inicio</button>
+            <button onclick="showPage('pilotos')">Pilotos</button>
+            <button onclick="showPage('equipos')">Equipos</button>
+            <button onclick="showPage('ranking')">Clasificación</button>
+            <button onclick="showPage('calendario')">Calendario</button>
+            <button onclick="showPage('noticias')">Noticias</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="page active">
+            <div class="hero-banner">
+                <h2 style="font-size: 2rem;">PRÓXIMO EVENTO: AUSTRALIA 2026</h2>
+                <h5 style="font-size: 2rem;">Prácticas 1</h5>
+                <div class="timer-display">
+                    <div><span class="time-unit" id="days">00</span><span class="time-label">Días</span></div>
+                    <div><span class="time-unit" id="hours">00</span><span class="time-label">Horas</span></div>
+                    <div><span class="time-unit" id="mins">00</span><span class="time-label">Mins</span></div>
+                    <div><span class="time-unit" id="segs">00</span><span class="time-label">segs</span></div>
+                </div>
+            </div>
+            <div class="dashboard">
+                <div class="menu-card" onclick="showPage('ranking')"><h3>RESULTADOS</h3><p>Pilotos/Equipos</p></div>
+                <div class="menu-card" onclick="showPage('noticias')"><h3>NOTICIAS</h3><p>Última hora</p></div>
+            </div>
+        </section>
+
+        <section id="pilotos" class="page">
+            <h1>Pilotos 2026</h1>
+            <div class="gp-item" onclick="toggleInfo('p1')">
+                🏎️ <strong>Fernando Alonso</strong> - Aston Martin
+                <div id="p1" class="circuit-info">
+                    <strong>Nacionalidad:</strong> España<br>
+                    <strong>Número:</strong> 14<br>
+                    <strong>Info:</strong> El veterano asturiano lidera el proyecto técnico de Aston Martin.<br>
+                    <img src="https://images.pexels.com/photos/163178/track-race-car-car-racer-163178.jpeg?auto=compress&cs=tinysrgb&w=400" class="info-img" alt="Fernando Alonso">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('p2')">
+                🏎️ <strong>Lewis Hamilton</strong> - Ferrari
+                <div id="p2" class="circuit-info">
+                    <strong>Nacionalidad:</strong> Reino Unido<br>
+                    <strong>Número:</strong> 44<br>
+                    <strong>Info:</strong> Hamilton inicia su etapa histórica con la Scuderia Ferrari buscando su octavo título.<br>
+                    <img src="https://images.pexels.com/photos/2261203/pexels-photo-2261203.jpeg?auto=compress&cs=tinysrgb&w=400" class="info-img" alt="Lewis Hamilton">
+                </div>
+            </div>
+        </section>
+
+        <section id="equipos" class="page">
+            <h1>Equipos 2026</h1>
+            <div class="gp-item" onclick="toggleInfo('e1')">
+                🛡️ <strong>Scuderia Ferrari</strong>
+                <div id="e1" class="circuit-info">
+                    <strong>Base:</strong> Maranello, Italia<br>
+                    <strong>Motor:</strong> Ferrari<br>
+                    <strong>Pilotos:</strong> Hamilton / Leclerc<br>
+                    <img src="https://images.pexels.com/photos/3311574/pexels-photo-3311574.jpeg?auto=compress&cs=tinysrgb&w=400" class="info-img" alt="Ferrari Team">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('e2')">
+                🛡️ <strong>Cadillac Racing</strong>
+                <div id="e2" class="circuit-info">
+                    <strong>Base:</strong> EE.UU.<br>
+                    <strong>Motor:</strong> Cadillac<br>
+                    <strong>Pilotos:</strong> Pérez / Bottas<br>
+                    <img src="https://images.pexels.com/photos/10186985/pexels-photo-10186985.jpeg?auto=compress&cs=tinysrgb&w=400" class="info-img" alt="Cadillac Team">
+                </div>
+            </div>
+        </section>
+
+        <section id="ranking" class="page">
+            <h1 style="margin-bottom: 2rem;">Clasificación Provisoria 2026</h1>
+            <div class="ranking-grid">
+                <div class="table-container">
+                    <h3 style="text-align: left; color: var(--accent-color);">Pilotos</h3>
+                    <table>
+                        <thead><tr><th>Pos</th><th>Piloto</th><th>Constructor</th><th>Pts</th></tr></thead>
+                        <tbody>
+                            <tr><td>1</td><td>Alexander Albon</td><td>Williams</td><td>0</td></tr>
+                            <tr><td>2</td><td>Arvid Lindblad</td><td>Racing Bulls</td><td>0</td></tr>
+                            <tr><td>3</td><td>Carlos Sainz</td><td>Williams</td><td>0</td></tr>
+                            <tr><td>4</td><td>Charles Leclerc</td><td>Ferrari</td><td>0</td></tr>
+                            <tr><td>5</td><td>Esteban Ocon</td><td>Haas F1 Team</td><td>0</td></tr>
+                            <tr><td>6</td><td>Fernando Alonso</td><td>Aston Martin</td><td>0</td></tr>
+                            <tr><td>7</td><td>Franco Colapinto</td><td>Alpine</td><td>0</td></tr>
+                            <tr><td>8</td><td>Gabriel Bortoleto</td><td>Audi</td><td>0</td></tr>
+                            <tr><td>9</td><td>George Russell</td><td>Mercedes</td><td>0</td></tr>
+                            <tr><td>10</td><td>Isack Hadjar</td><td>Red Bull Racing</td><td>0</td></tr>
+                            <tr><td>11</td><td>Kimi Antonelli</td><td>Mercedes</td><td>0</td></tr>
+                            <tr><td>12</td><td>Lance Stroll</td><td>Aston Martin</td><td>0</td></tr>
+                            <tr><td>13</td><td>Lando Norris</td><td>McLaren</td><td>0</td></tr>
+                            <tr><td>14</td><td>Lewis Hamilton</td><td>Ferrari</td><td>0</td></tr>
+                            <tr><td>15</td><td>Liam Lawson</td><td>Racing Bulls</td><td>0</td></tr>
+                            <tr><td>16</td><td>M. Verstappen</td><td>Red Bull Racing</td><td>0</td></tr>
+                            <tr><td>17</td><td>Nico Hulkenberg</td><td>Audi</td><td>0</td></tr>
+                            <tr><td>18</td><td>Oliver Bearman</td><td>Haas F1 Team</td><td>0</td></tr>
+                            <tr><td>19</td><td>Oscar Piastri</td><td>McLaren</td><td>0</td></tr>
+                            <tr><td>20</td><td>Pierre Gasly</td><td>Alpine</td><td>0</td></tr>
+                            <tr><td>21</td><td>Sergio Perez</td><td>Cadillac</td><td>0</td></tr>
+                            <tr><td>22</td><td>Valteri Bottas</td><td>Cadillac</td><td>0</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-container">
+                    <h3 style="text-align: left; color: var(--accent-color);">Equipos</h3>
+                    <table>
+                        <thead><tr><th>Pos</th><th>Escudería</th><th>Pts</th></tr></thead>
+                        <tbody>
+                            <tr><td>1</td><td>Alpine</td><td>0</td></tr>
+                            <tr><td>2</td><td>Aston Martin</td><td>0</td></tr>
+                            <tr><td>3</td><td>Audi</td><td>0</td></tr>
+                            <tr><td>4</td><td>Cadillac</td><td>0</td></tr>
+                            <tr><td>5</td><td>Ferrari</td><td>0</td></tr>
+                            <tr><td>6</td><td>Haas F1 Team</td><td>0</td></tr>
+                            <tr><td>7</td><td>McLaren</td><td>0</td></tr>
+                            <tr><td>8</td><td>Mercedes</td><td>0</td></tr>
+                            <tr><td>9</td><td>Racing Bulls</td><td>0</td></tr>
+                            <tr><td>10</td><td>Red Bull Racing</td><td>0</td></tr>
+                            <tr><td>11</td><td>Williams</td><td>0</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="calendario" class="page">
+            <h1>Calendario de Temporada</h1>
+            <div class="gp-item" onclick="toggleInfo('c1')">
+                📍 <strong>Melbourne, Australia</strong> - 15 Marzo
+                <div id="c1" class="circuit-info">
+                    <strong>Circuito:</strong> Albert Park<br>
+                    <strong>Longitud:</strong> 5.278 km<br>
+                    <strong>Vueltas:</strong> 58<br>
+                    <strong>Detalle:</strong> Circuito semi-urbano conocido por su alta velocidad.<br>
+                    <img src="Circuito_Australia_Sectores.png" class="info-img" alt="Mapa Albert Park">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c2')">
+                📍 <strong>Shanghái, China</strong> - 13 Marzo // 15 Marzo
+                <div id="c2" class="circuit-info">
+                    <strong>Circuito:</strong> Circuito Internacional de Shanghái<br>
+                    <strong>Longitud:</strong>  5,451 km<br>
+                    <strong>Vueltas:</strong> 56<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c3')">
+                📍 <strong>Shanghái, Japón</strong> - 27 Marzo // 29 Marzo
+                <div id="c3" class="circuit-info">
+                    <strong>Circuito:</strong> Circuito Internacional de Shanghái<br>
+                    <strong>Longitud:</strong>  5,451 km<br>
+                    <strong>Vueltas:</strong> 56<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c4')">
+                📍 <strong>Sakhir, Baréin</strong> - 10 Abril // 12 Abril
+                <div id="c4" class="circuit-info">
+                    <strong>Circuito:</strong> Circuito Internacional de Shanghái<br>
+                    <strong>Longitud:</strong>  5,451 km<br>
+                    <strong>Vueltas:</strong> 56<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c5')">
+                📍 <strong>Yeda, Arabia Saudita</strong> - 17 Abril // 19 Abril
+                <div id="c5" class="circuit-info">
+                    <strong>Circuito:</strong> Circuito Internacional de Shanghái<br>
+                    <strong>Longitud:</strong>  5,451 km<br>
+                    <strong>Vueltas:</strong> 56<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c6')">
+                📍 <strong>Miami, Estados Unidos</strong> - 1 Mayo // 3 Mayo
+                <div id="c6" class="circuit-info">
+                    <strong>Circuito:</strong> Circuito Internacional de Shanghái<br>
+                    <strong>Longitud:</strong>  5,451 km<br>
+                    <strong>Vueltas:</strong> 56<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c7')">
+                📍 <strong>Montreal, Canadá</strong> - 22 Mayo // 24 Mayo
+                <div id="c7" class="circuit-info">
+                    <strong>Circuito:</strong> Circuito Internacional de Shanghái<br>
+                    <strong>Longitud:</strong>  5,451 km<br>
+                    <strong>Vueltas:</strong> 56<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c8')">
+                📍 <strong>Montecarlo, Mónaco</strong> - 5 Junio // 7 Junio
+                <div id="c8" class="circuit-info">
+                    <strong>Circuito:</strong> Circuito Internacional de Shanghái<br>
+                    <strong>Longitud:</strong>  5,451 km<br>
+                    <strong>Vueltas:</strong> 56<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c9')">
+                📍 <strong>Barcelona, España</strong> - 12 Junio // 14 Junio
+                <div id="c9" class="circuit-info">
+                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
+                    <strong>Longitud:</strong> 4.657 km<br>
+                    <strong>Vueltas:</strong> 66<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c10')">
+                📍 <strong>Spielberg, Austria</strong> - 26 Junio // 28 Junio
+                <div id="c10" class="circuit-info">
+                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
+                    <strong>Longitud:</strong> 4.657 km<br>
+                    <strong>Vueltas:</strong> 66<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c11')">
+                📍 <strong>Inglaterra, Gran Bretaña</strong> - 3 Julio // 5 Julio
+                <div id="c11" class="circuit-info">
+                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
+                    <strong>Longitud:</strong> 4.657 km<br>
+                    <strong>Vueltas:</strong> 66<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c12')">
+                📍 <strong>Spa-Francorchamps, Bélgica</strong> - 17 Julio // 19 Julio
+                <div id="c12" class="circuit-info">
+                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
+                    <strong>Longitud:</strong> 4.657 km<br>
+                    <strong>Vueltas:</strong> 66<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c13')">
+                📍 <strong>Mogyoród, Hungría</strong> - 24 Julio // 26 Julio
+                <div id="c13" class="circuit-info">
+                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
+                    <strong>Longitud:</strong> 4.657 km<br>
+                    <strong>Vueltas:</strong> 66<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c14')">
+                📍 <strong>Haarlem, Paises Bajos</strong> - 21 Agosto // 23 Agosto
+                <div id="c14" class="circuit-info">
+                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
+                    <strong>Longitud:</strong> 4.657 km<br>
+                    <strong>Vueltas:</strong> 66<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c15')">
+                📍 <strong>Monza, Italia</strong> - 4 Septiembre // 6 Septiembre
+                <div id="c15" class="circuit-info">
+                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
+                    <strong>Longitud:</strong> 4.657 km<br>
+                    <strong>Vueltas:</strong> 66<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c16')">
+                📍 <strong>Madrid, España</strong> - 11 Septiembre // 13 Septiembre
+                <div id="c16" class="circuit-info">
+                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
+                    <strong>Longitud:</strong> 4.657 km<br>
+                    <strong>Vueltas:</strong> 66<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c17')">
+                📍 <strong>Bakú, Azerbaiyán</strong> - 24 Septiembre // 26 Septiembre
+                <div id="c17" class="circuit-info">
+                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
+                    <strong>Longitud:</strong> 4.657 km<br>
+                    <strong>Vueltas:</strong> 66<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c18')">
+                📍 <strong>Marina Bay, Singapur</strong> - 9 Octubre // 11 Octubre
+                <div id="c18" class="circuit-info">
+                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
+                    <strong>Longitud:</strong> 4.657 km<br>
+                    <strong>Vueltas:</strong> 66<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c19')">
+                📍 <strong>Austin, Estados Unidos</strong> - 23 Octubre // 25 Octubre
+                <div id="c19" class="circuit-info">
+                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
+                    <strong>Longitud:</strong> 4.657 km<br>
+                    <strong>Vueltas:</strong> 66<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c20')">
+                📍 <strong>Ciudad de México, México</strong> - 30 Octubre // 1 Noviembre
+                <div id="c20" class="circuit-info">
+                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
+                    <strong>Longitud:</strong> 4.657 km<br>
+                    <strong>Vueltas:</strong> 66<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c21')">
+                📍 <strong>São Paulo, Brasil</strong> - 6 Noviembre // 8 Noviembre
+                <div id="c21" class="circuit-info">
+                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
+                    <strong>Longitud:</strong> 4.657 km<br>
+                    <strong>Vueltas:</strong> 66<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c22')">
+                📍 <strong>Las Vegas, Estados Unidos</strong> - 19 Noviembre // 21 Noviembre
+                <div id="c22" class="circuit-info">
+                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
+                    <strong>Longitud:</strong> 4.657 km<br>
+                    <strong>Vueltas:</strong> 66<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c23')">
+                📍 <strong>Lusail, Qatar</strong> - 27 Noviembre // 29 Noviembre
+                <div id="c23" class="circuit-info">
+                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
+                    <strong>Longitud:</strong> 4.657 km<br>
+                    <strong>Vueltas:</strong> 66<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+            <div class="gp-item" onclick="toggleInfo('c24')">
+                📍 <strong>Isla de Yas, Abu Dhabi</strong> - 4 Diciembre // 6 Diciembre
+                <div id="c24" class="circuit-info">
+                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
+                    <strong>Longitud:</strong> 4.657 km<br>
+                    <strong>Vueltas:</strong> 66<br>
+                    <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                </div>
+            </div>
+        </section>
+
+        <section id="noticias" class="page">
+            <h1>Últimas Noticias</h1>
+            <div class="news-container">
+                <div class="news-item" onclick="toggleInfo('n1')">
+                    <div class="news-header">
+                        <img src="https://images.pexels.com/photos/355325/pexels-photo-355325.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Neumáticos">
+                        <div>
+                            <small style="color:var(--accent-color)">TÉCNICA • 24 ENE</small>
+                            <h3>Nuevos compuestos de neumáticos</h3>
+                        </div>
+                    </div>
+                    <div id="n1" class="news-body">
+                        <p>Pirelli ha anunciado la nueva gama de compuestos para la temporada 2026. Debido al aumento del par motor en las nuevas unidades de potencia, las carcasas han sido reforzadas para evitar el sobrecalentamiento en curvas de alta energía.</p>
+                        <p>Se espera que los nuevos neumáticos sean un 10% más duraderos pero con una ventana de funcionamiento más estrecha.</p>
+                    </div>
+                </div>
+                
+                <div class="news-item" onclick="toggleInfo('n2')">
+                    <div class="news-header">
+                        <img src="https://images.pexels.com/photos/191538/pexels-photo-191538.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Test">
+                        <div>
+                            <small style="color:var(--accent-color)">PRETEMPORADA • 22 ENE</small>
+                            <h3>Confirmadas fechas de Test</h3>
+                        </div>
+                    </div>
+                    <div id="n2" class="news-body">
+                        <p>La FIA ha confirmado que los test oficiales de pretemporada se llevarán a cabo en Baréin durante la última semana de febrero. Serán 3 días críticos donde los equipos pondrán a prueba por primera vez el chasis diseñado bajo las nuevas regulaciones aerodinámicas activas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Apex Racing Hub. Proyecto realizado por fans para fines informativos.</p>
+        <p>Aviso: Este sitio web es independiente y no oficial.</p>
+    </footer>
+
+    <script>
+        function showPage(id) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            window.scrollTo(0,0);
+        }
+
+        function toggleInfo(id) {
+            const el = document.getElementById(id);
+            const isVisible = el.style.display === 'block';
+            
+            // Cierra todos los posibles desplegables de todas las secciones
+            document.querySelectorAll('.circuit-info, .news-body').forEach(info => info.style.display = 'none');
+            
+            el.style.display = isVisible ? 'none' : 'block';
+        }
+
+        const raceDate = new Date("March 6, 2026 02:30:00").getTime();
+        setInterval(() => {
+            const now = new Date().getTime();
+            const diff = raceDate - now;
+            document.getElementById("days").innerText = Math.floor(diff / (1000 * 60 * 60 * 24));
+            document.getElementById("hours").innerText = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            document.getElementById("mins").innerText = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            document.getElementById("segs").innerText = Math.floor((diff % (1000 * 60)) / 1000);
+        }, 1000);
+    </script>
+</body>
+</html>
