@@ -58,4 +58,15 @@ body {
     border: 1px solid var(--glass-border); display: block; 
 }
 
+/* Tablas de Clasificación */
+.table-container {
+    overflow-x: auto; background: var(--card-bg); padding: 1.5rem;
+    border-radius: 16px; border: 1px solid var(--glass-border);
+}
+
+table { width: 100%; border-collapse: collapse; margin-top: 1rem; margin-bottom: 2rem; }
+th { text-align: left; color: var(--accent-color); font-size: 0.8rem; padding: 12px; border-bottom: 2px solid var(--glass-border); }
+td { padding: 12px; border-bottom: 1px solid var(--glass-border); }
+
+
 
