@@ -189,16 +189,19 @@ footer {
     .hero-banner { min-height: 40vh; }
 }
 
-header nav {
-    display: flex !important;
-    gap: 12px !important;
-    margin-top: 20px !important;
-    background: rgba(255, 255, 255, 0.08) !important;
-    padding: 8px 20px !important;
-    border-radius: 50px !important;
-    border: 1px solid rgba(255, 255, 255, 0.15) !important;
-    backdrop-filter: blur(12px) !important;
-    flex-wrap: wrap;
-    justify-content: center;
+nav a, nav button {
+    /* --- CAMBIA ESTO PARA DARLE TU ESTILO --- */
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1); /* Color de fondo de los botones */
+    color: white;                         /* Color del texto */
+    font-weight: 700;
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    border-radius: 50px;                  /* Cámbialo a 0px si los quieres cuadrados */
+    border: 1px solid transparent;
+    transition: all 0.3s ease;            /* Suavidad de la animación */
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
 }
 
