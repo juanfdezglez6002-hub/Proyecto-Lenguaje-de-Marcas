@@ -59,21 +59,6 @@ th { text-align: left; color: var(--accent-color); font-size: 0.8rem; padding: 1
 td { padding: 12px; border-bottom: 1px solid var(--glass-border); }
 
 
-/*Banner con la foto de fondo*/
-
-.hero-container {
-    position: relative;
-    width: 95%;
-    max-width: 1200px;
-    margin: 30px auto;
-    height: 450px;
-    border-radius: 20px; /* Bordes redondeados como en la foto */
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
 /* La imagen de fondo */
 
