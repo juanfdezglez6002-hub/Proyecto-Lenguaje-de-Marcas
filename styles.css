@@ -1,80 +1,165 @@
-/* --- 1. AJUSTE DE CONTENEDOR GLOBAL --- */
-main {
-    width: 95%; /* Ocupa casi el 100% de la pantalla */
-    max-width: 1600px; /* Límite para que en monitores 4K no se deforme demasiado */
-    display: flex;
-    flex-direction: column;
-    gap: 4rem; 
-    padding: 2rem 0;
-    margin: 0 auto;
+:root {
+    --accent-color: #d60036;
+    --dark-bg: #0f1115;
+    --card-bg: rgba(26, 28, 35, 0.9);
+    --text-white: #f0f0f0;
+    --glass-border: rgba(255, 255, 255, 0.08);
 }
 
-/* --- 2. BANNER AUSTRALIA GIGANTE (FULL WIDTH) --- */
-.hero-banner {
-    width: 100%;
-    min-height: 60vh; /* Ocupa el 60% de la altura de la pantalla */
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                url('https://images.pexels.com/photos/3851030/pexels-photo-3851030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-size: cover;
-    background-position: center;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--dark-bg);
+    background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+    color: var(--text-white);
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* --- NAVEGACIÓN FIJA --- */
+header {
+    background-color: rgba(15, 17, 21, 0.95);
+    backdrop-filter: blur(15px);
+    width: 100%;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--glass-border);
+    position: sticky; top: 0; z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    background: transparent; 
+    border: 1px solid var(--glass-border); 
+    color: white;
+    font-weight: 600; 
+    padding: 10px 25px; 
+    font-size: 0.9rem; 
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+/* --- CONTENEDOR ÚNICO VERTICAL (EXTENDIDO) --- */
+main {
+    width: 95%; /* Ocupa casi la totalidad del ancho */
+    max-width: 1600px; /* Límite para pantallas ultra-wide */
+    display: flex;
+    flex-direction: column;
+    gap: 6rem; 
+    padding: 3rem 0;
+}
+
+.page {
+    display: flex !important; 
+    flex-direction: column;
+    width: 100%;
+}
+
+/* --- BANNER INMERSIVO --- */
+.hero-banner {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), 
+                url('https://images.pexels.com/photos/3851030/pexels-photo-3851030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover; 
+    background-position: center;
+    min-height: 70vh; /* Altura considerable para impacto visual */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    border-radius: 25px;
-    box-sizing: border-box;
+    align-items: center;
+    padding: 2rem; 
+    border-radius: 30px; 
+    text-align: center;
+    border: 1px solid var(--glass-border);
 }
 
 .hero-banner h2 {
-    font-size: clamp(3.5rem, 12vw, 8rem) !important; /* Texto masivo */
-    margin: 0;
+    font-size: clamp(3rem, 12vw, 8rem); /* Texto mucho más grande */
+    font-weight: 900; 
+    text-transform: uppercase; 
+    line-height: 0.9;
+    margin-bottom: 1.5rem;
     letter-spacing: -3px;
 }
 
-/* --- 3. TABLAS A LO ANCHO --- */
-.table-container {
-    width: 100%;
+/* --- TABLAS Y CONTENIDO AMPLIADO --- */
+.table-container, .news-item, .gp-item {
     background: var(--card-bg);
-    padding: 2rem;
     border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    margin-bottom: 2rem;
+    width: 100%;
+    padding: 2rem; /* Más espacio interno */
     box-sizing: border-box;
 }
 
-table {
-    width: 100%;
-    font-size: 1.1rem; /* Texto un poco más grande para acompañar el ancho */
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    font-size: 1.1rem; /* Texto de tabla más legible */
 }
 
-th, td {
-    padding: 20px; /* Celdas más espaciosas */
+td, th { 
+    padding: 20px; 
+    border-bottom: 1px solid var(--glass-border); 
 }
 
-/* --- 4. CALENDARIO Y NOTICIAS --- */
-.gp-item, .news-item {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 25px;
-    margin-bottom: 20px;
+th {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: var(--accent-color);
 }
 
+/* --- IMÁGENES --- */
 .info-img {
-    max-width: 800px; /* El mapa del circuito ahora puede ser mucho más grande */
-    margin: 20px auto;
+    width: 100%;
+    max-width: 1200px; /* Mapa más grande */
+    height: auto;
+    border-radius: 15px;
+    margin: 2rem auto;
+    display: block;
+}
+
+.news-header {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
 }
 
 .news-header img {
-    width: 100%;
-    max-height: 500px; /* Imágenes de noticias tipo cine */
+    width: 40%; /* Imagen de noticia más ancha */
+    height: 300px;
+    border-radius: 12px;
     object-fit: cover;
 }
 
-/* --- 5. RESPONSIVO (Para que en móvil no se rompa) --- */
+/* Ajuste para móviles */
 @media (max-width: 768px) {
-    main {
-        width: 100%;
-        padding: 10px;
+    .news-header {
+        flex-direction: column;
     }
-    .hero-banner h2 {
-        font-size: 3rem !important;
+    .news-header img {
+        width: 100%;
+    }
+    main {
+        width: 98%;
     }
 }
