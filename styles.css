@@ -37,7 +37,7 @@ header {
     border-bottom: 1px solid var(--glass-border);
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1234;
 }
 
 header .logo { 
@@ -73,8 +73,8 @@ nav a:hover {
 /* --- 3. CONTENEDOR VERTICAL (90% ANCHO) --- */
 main {
     width: 80%;
-    max-width: 1400px; /* Límite para que no se estire infinito en monitores 4K */
-    display: flex;
+    max-width: 1400px; /* limito para no pasarme de ancho */
+    display: flex; 
     flex-direction: column;
     gap: 4rem; /* Espacio entre secciones */
     padding: 2rem 0;
