@@ -28,12 +28,7 @@
             <div class="hero-banner">
                 <h2 style="font-size: 2rem;">PRÓXIMO EVENTO: AUSTRALIA 2028</h2>
                 <h5 style="font-size: 2rem;">Prácticas 1</h5>
-                <div class="timer-display">
-                    <div><span class="time-unit" id="days">00</span><span class="time-label">Días</span></div>
-                    <div><span class="time-unit" id="hours">00</span><span class="time-label">Horas</span></div>
-                    <div><span class="time-unit" id="mins">00</span><span class="time-label">Mins</span></div>
-                    <div><span class="time-unit" id="segs">00</span><span class="time-label">segs</span></div>
-                </div>
+                <h6 style="font-size: 2rem;">6 DE MARZO 02:30 - 03:30</h6>
             </div>
             <div class="dashboard">
                 <div class="menu-card" onclick="showPage('ranking')"><h3>RESULTADOS</h3><p>Pilotos/Equipos</p></div>
@@ -530,16 +525,6 @@
             
             el.style.display = isVisible ? 'none' : 'block';
         }
-
-        const raceDate = new Date("March 6, 2026 02:30:00").getTime();
-        setInterval(() => {
-            const now = new Date().getTime();
-            const diff = raceDate - now;
-            document.getElementById("days").innerText = Math.floor(diff / (1000 * 60 * 60 * 24));
-            document.getElementById("hours").innerText = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            document.getElementById("mins").innerText = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            document.getElementById("segs").innerText = Math.floor((diff % (1000 * 60)) / 1000);
-        }, 1000);
     </script>
 </body>
 </html>
