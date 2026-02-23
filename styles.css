@@ -72,7 +72,7 @@ nav a:hover {
 
 /* --- 3. CONTENEDOR VERTICAL (90% ANCHO) --- */
 main {
-    width: 90%;
+    width: 80%;
     max-width: 1400px; /* Límite para que no se estire infinito en monitores 4K */
     display: flex;
     flex-direction: column;
@@ -113,10 +113,6 @@ main {
     line-height: 0.9;
     letter-spacing: -2px;
 }
-
-.timer-display { display: flex; justify-content: center; gap: 30px; margin-top: 30px; }
-.time-unit { font-size: clamp(2rem, 5vw, 4rem); font-weight: 900; color: var(--accent-color); }
-.time-label { font-size: 0.8rem; color: #aaa; text-transform: uppercase; letter-spacing: 2px; }
 
 /* --- 5. DASHBOARD Y TARJETAS --- */
 .dashboard {
