@@ -1,4 +1,3 @@
-/* --- 1. VARIABLES Y BASE --- */
 :root {
     --accent-color: #d60036;
     --secondary-color: #00d2ff;
@@ -9,7 +8,7 @@
 }
 
 html {
-    scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en el menú */
+    scroll-behavior: smooth; /* vuelve al menu de inicio para que el formato de una sola página vuelva al principio */
 }
 
 body {
