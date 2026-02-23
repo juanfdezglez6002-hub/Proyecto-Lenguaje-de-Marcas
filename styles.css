@@ -196,7 +196,7 @@ nav a, nav button {
     color: blue;                         /* Color del texto */
     font-weight: 700;
     padding: 12px 24px;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     border-radius: 50px;                  /* Cámbialo a 0px si los quieres cuadrados */
     border: 1px solid transparent;
     transition: all 0.3s ease;            /* Suavidad de la animación */
