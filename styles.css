@@ -188,3 +188,15 @@ footer {
     .news-header img { width: 100%; height: auto; }
     .hero-banner { min-height: 40vh; }
 }
+
+/* Contenedor de los botones */
+nav.nav-pills {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.05); /* Efecto cristal */
+    padding: 10px 25px;
+    border-radius: 50px; /* Forma de píldora */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
