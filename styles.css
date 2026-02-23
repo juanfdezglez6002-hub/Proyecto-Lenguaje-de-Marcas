@@ -72,7 +72,7 @@ nav a:hover {
 
 /* --- 3. CONTENEDOR VERTICAL (90% ANCHO) --- */
 main {
-    width: 80%;
+    width: 85%;
     max-width: 1400px; /* limito para no pasarme de ancho */
     display: flex; 
     flex-direction: column;
