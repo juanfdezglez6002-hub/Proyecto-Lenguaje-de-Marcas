@@ -65,11 +65,6 @@ nav a {
     transition: 0.3s;
 }
 
-nav a, nav button:hover {
-    background: var(--accent-color);
-    border-color: var(--accent-color);
-}
-
 /* --- 3. CONTENEDOR VERTICAL (90% ANCHO) --- */
 main {
     width: 85%;
@@ -203,5 +198,9 @@ nav a, nav button {
     text-transform: uppercase;
     cursor: pointer;
     display: inline-block;
+}
+
+nav a, nav button :hover {
+    color: red;
 }
 
