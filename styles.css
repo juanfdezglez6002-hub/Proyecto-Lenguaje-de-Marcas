@@ -86,7 +86,7 @@ main {
 /* --- 4. HERO BANNER (GIGANTE) --- */
 .hero-banner {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), 
-                url('https://images.pexels.com/photos/3851030/pexels-photo-3851030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+                url('https://images.pexels.com/photos/12795/pexels-photo-12795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
     background-position: center;
     min-height: 60vh;
@@ -183,6 +183,8 @@ footer {
     .news-header img { width: 100%; height: auto; }
     .hero-banner { min-height: 40vh; }
 }
+
+
 
 nav a, nav button {
     /* --- CAMBIA ESTO PARA DARLE TU ESTILO --- */
