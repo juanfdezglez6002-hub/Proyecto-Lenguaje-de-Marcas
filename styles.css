@@ -193,7 +193,7 @@ nav a, nav button {
     /* --- CAMBIA ESTO PARA DARLE TU ESTILO --- */
     text-decoration: none;
     background: rgba(255, 255, 255, 0.1); /* Color de fondo de los botones */
-    color: white;                         /* Color del texto */
+    color: blue;                         /* Color del texto */
     font-weight: 700;
     padding: 12px 24px;
     font-size: 0.9rem;
