@@ -14,17 +14,17 @@
     <header>
         <div class="logo">APEX RACING HUB</div>
         <nav>
-            <button onclick="showPage('inicio')">Inicio</button>
-            <button onclick="showPage('pilotos')">Pilotos</button>
-            <button onclick="showPage('equipos')">Equipos</button>
-            <button onclick="showPage('ranking')">Clasificación</button>
-            <button onclick="showPage('calendario')">Calendario</button>
-            <button onclick="showPage('noticias')">Noticias</button>
+            <a href="#inicio">INICIO</a>
+            <a href="#pilotos">PILOTOS</a>
+            <a href="#inicio">EQUIPOS</a>
+            <a href="#clasificacion">CLASIFICACIÓN</a>
+            <a href="#calendario">CALENDARIO</a>
+            <a href="#noticias">NOTICIAS</a>
         </nav>
     </header>
 
     <main>
-        <section id="inicio" class="page active">
+        <section id="inicio">
             <div class="hero-banner">
                 <h2 style="font-size: 2rem;">PRÓXIMO EVENTO: AUSTRALIA 2029</h2>
                 <h5 style="font-size: 2rem;">Prácticas 1</h5>
@@ -32,7 +32,7 @@
             </div>
         </section>
 
-        <section id="pilotos" class="page">
+        <section id="pilotos">
             <h1>Pilotos 2026</h1>
             <div class="gp-item" onclick="toggleInfo('p1')">
                  <strong>Fernando Alonso</strong> - Aston Martin
@@ -54,7 +54,7 @@
             </div>
         </section>
 
-        <section id="equipos" class="page">
+        <section id="equipos">
             <h1>Equipos 2026</h1>
             <div class="gp-item" onclick="toggleInfo('e1')">
                  <strong>BWT Alpine Formula One Team</strong>
@@ -168,7 +168,7 @@
             </div>
         </section>
 
-        <section id="ranking" class="page">
+        <section id="clasificacion">
             <h1 style="margin-bottom: 2rem;">Clasificación Provisoria 2026</h1>
             <div class="ranking-grid">
                 <div class="table-container">
@@ -224,7 +224,7 @@
             </div>
         </section>
 
-        <section id="calendario" class="page">
+        <section id="calendario">
             <h1>Calendario de Temporada</h1>
             <div class="gp-item" onclick="toggleInfo('c1')">
                 📍 <strong>Melbourne, Australia</strong> - 15 Marzo
@@ -467,7 +467,7 @@
                 </div>
             </div>
         </section>
-        <section id="noticias" class="page">
+        <section id="noticias">
             <h1>Últimas Noticias</h1>
             <div class="news-container">
                 <div class="news-item" onclick="toggleInfo('n1')">
@@ -506,12 +506,6 @@
     </footer>
 
     <script>
-        function showPage(id) {
-            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-            document.getElementById(id).classList.add('active');
-            window.scrollTo(0,0);
-        }
-
         function toggleInfo(id) {
             const el = document.getElementById(id);
             const isVisible = el.style.display === 'block';
