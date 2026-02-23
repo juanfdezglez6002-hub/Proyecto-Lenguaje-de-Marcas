@@ -1,55 +1,68 @@
+/* --- 1. VARIABLES Y BASE --- */
 :root {
     --accent-color: #d60036;
+    --secondary-color: #00d2ff;
     --dark-bg: #0f1115;
     --card-bg: rgba(26, 28, 35, 0.9);
     --text-white: #f0f0f0;
-    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.12);
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en el menú */
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     background-color: var(--dark-bg);
-    background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+    background-image: 
+        radial-gradient(circle at 50% 0%, rgba(214, 0, 54, 0.15) 0%, transparent 50%),
+        url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
     color: var(--text-white);
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centra el contenido principal */
 }
 
-/* --- NAVEGACIÓN FIJA --- */
+/* --- 2. HEADER FIJO --- */
 header {
     background-color: rgba(15, 17, 21, 0.95);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(20px);
     width: 100%;
-    padding: 1.5rem 0;
-    border-bottom: 1px solid var(--glass-border);
-    position: sticky; top: 0; z-index: 1000;
+    padding: 1.2rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 1px solid var(--glass-border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo { 
+    font-weight: 900; font-size: 1.8rem; letter-spacing: -1px;
+    color: var(--accent-color); text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 nav {
     display: flex;
-    gap: 15px;
-    margin-top: 15px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav a {
     text-decoration: none;
-    background: transparent; 
-    border: 1px solid var(--glass-border); 
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--glass-border);
     color: white;
-    font-weight: 600; 
-    padding: 10px 25px; 
-    font-size: 0.9rem; 
+    font-weight: 600;
+    padding: 8px 20px;
+    font-size: 0.8rem;
     border-radius: 6px;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 nav a:hover {
@@ -57,109 +70,125 @@ nav a:hover {
     border-color: var(--accent-color);
 }
 
-/* --- CONTENEDOR ÚNICO VERTICAL (EXTENDIDO) --- */
+/* --- 3. CONTENEDOR VERTICAL (90% ANCHO) --- */
 main {
-    width: 95%; /* Ocupa casi la totalidad del ancho */
-    max-width: 1600px; /* Límite para pantallas ultra-wide */
+    width: 90%;
+    max-width: 1400px; /* Límite para que no se estire infinito en monitores 4K */
     display: flex;
     flex-direction: column;
-    gap: 6rem; 
-    padding: 3rem 0;
+    gap: 4rem; /* Espacio entre secciones */
+    padding: 2rem 0;
 }
 
+/* Forzamos que todas las secciones sean visibles en el One Page */
 .page {
     display: flex !important; 
     flex-direction: column;
     width: 100%;
+    animation: fadeIn 0.8s ease;
 }
 
-/* --- BANNER INMERSIVO --- */
+/* --- 4. HERO BANNER (GIGANTE) --- */
 .hero-banner {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), 
                 url('https://images.pexels.com/photos/3851030/pexels-photo-3851030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
-    min-height: 70vh; /* Altura considerable para impacto visual */
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem; 
-    border-radius: 30px; 
+    border-radius: 30px;
     text-align: center;
     border: 1px solid var(--glass-border);
+    padding: 2rem;
 }
 
 .hero-banner h2 {
-    font-size: clamp(3rem, 12vw, 8rem); /* Texto mucho más grande */
-    font-weight: 900; 
-    text-transform: uppercase; 
+    font-size: clamp(2.5rem, 8vw, 6rem) !important; /* TAMAÑO GIGANTE SOLICITADO */
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
     line-height: 0.9;
-    margin-bottom: 1.5rem;
-    letter-spacing: -3px;
+    letter-spacing: -2px;
 }
 
-/* --- TABLAS Y CONTENIDO AMPLIADO --- */
-.table-container, .news-item, .gp-item {
+.timer-display { display: flex; justify-content: center; gap: 30px; margin-top: 30px; }
+.time-unit { font-size: clamp(2rem, 5vw, 4rem); font-weight: 900; color: var(--accent-color); }
+.time-label { font-size: 0.8rem; color: #aaa; text-transform: uppercase; letter-spacing: 2px; }
+
+/* --- 5. DASHBOARD Y TARJETAS --- */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.menu-card {
     background: var(--card-bg);
+    padding: 3rem 2rem;
     border-radius: 20px;
     border: 1px solid var(--glass-border);
-    margin-bottom: 2rem;
-    width: 100%;
-    padding: 2rem; /* Más espacio interno */
-    box-sizing: border-box;
+    transition: 0.4s;
+    text-align: center;
 }
 
-table { 
-    width: 100%; 
-    border-collapse: collapse; 
-    font-size: 1.1rem; /* Texto de tabla más legible */
+.menu-card:hover { 
+    border-color: var(--accent-color); 
+    transform: translateY(-10px);
+    background: rgba(40, 42, 50, 0.9);
 }
 
-td, th { 
-    padding: 20px; 
-    border-bottom: 1px solid var(--glass-border); 
+/* --- 6. TABLAS (MÁS ANCHAS) --- */
+.table-container {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 24px;
+    border: 1px solid var(--glass-border);
+    overflow-x: auto;
 }
 
-th {
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
-    color: var(--accent-color);
+table { width: 100%; border-collapse: collapse; font-size: 1.1rem; }
+th { 
+    text-transform: uppercase; letter-spacing: 1px;
+    color: var(--accent-color); padding: 15px; 
+    border-bottom: 2px solid var(--glass-border); 
 }
+td { padding: 18px 15px; border-bottom: 1px solid var(--glass-border); }
 
-/* --- IMÁGENES --- */
-.info-img {
-    width: 100%;
-    max-width: 1200px; /* Mapa más grande */
-    height: auto;
+/* --- 7. CALENDARIO Y NOTICIAS --- */
+.gp-item, .news-item {
+    background: var(--card-bg);
     border-radius: 15px;
-    margin: 2rem auto;
-    display: block;
+    border: 1px solid var(--glass-border);
+    margin-bottom: 1.5rem;
+    padding: 20px;
+    transition: 0.3s;
 }
 
-.news-header {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
+.news-header { display: flex; align-items: center; gap: 2rem; }
+.news-header img { width: 250px; height: 150px; border-radius: 12px; }
+
+.info-img { 
+    width: 100%; max-width: 800px; /* Mapas más grandes */
+    margin: 20px auto; border-radius: 15px; 
 }
 
-.news-header img {
-    width: 40%; /* Imagen de noticia más ancha */
-    height: 300px;
-    border-radius: 12px;
-    object-fit: cover;
+/* --- 8. FOOTER --- */
+footer {
+    width: 100%;
+    padding: 4rem 0;
+    text-align: center;
+    background: #000;
+    border-top: 1px solid var(--glass-border);
+    color: #555;
 }
 
-/* Ajuste para móviles */
+/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
-    .news-header {
-        flex-direction: column;
-    }
-    .news-header img {
-        width: 100%;
-    }
-    main {
-        width: 98%;
-    }
+    main { width: 95%; }
+    .news-header { flex-direction: column; text-align: center; }
+    .news-header img { width: 100%; height: auto; }
+    .hero-banner { min-height: 40vh; }
 }
