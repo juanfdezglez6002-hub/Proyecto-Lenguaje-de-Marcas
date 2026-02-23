@@ -189,4 +189,16 @@ footer {
     .hero-banner { min-height: 40vh; }
 }
 
+header nav {
+    display: flex !important;
+    gap: 12px !important;
+    margin-top: 20px !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    padding: 8px 20px !important;
+    border-radius: 50px !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(12px) !important;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
