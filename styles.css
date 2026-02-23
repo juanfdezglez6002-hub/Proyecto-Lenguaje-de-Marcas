@@ -200,7 +200,10 @@ nav a, nav button {
     display: inline-block;
 }
 
-nav a, nav button :hover {
+nav a:hover, nav button :hover {
     color: red;
+    font-weight: 900;
+    border-color: #ff0000;
+    transform: scale(1.05);
 }
 
