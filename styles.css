@@ -174,17 +174,6 @@ footer {
     border-top: 1px solid var(--glass-border);
     color: #555;
 }
-
-/* --- RESPONSIVE --- */
-@media (max-width: 768px) {
-    main { width: 95%; }
-    .news-header { flex-direction: column; text-align: center; }
-    .news-header img { width: 100%; height: auto; }
-    .hero-banner { min-height: 40vh; }
-}
-
-
-
 nav a, nav button {
     /* --- CAMBIA ESTO PARA DARLE TU ESTILO --- */
     text-decoration: none;
