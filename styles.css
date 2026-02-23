@@ -11,54 +11,41 @@
 
 
 header {
+    background-color: #111;
     display: flex;
-    flex-direction: column; /* El logo arriba y el nav abajo */
+    justify-content: center; /* Centra todo el contenido del header */
     align-items: center;
-    background-color: #000;
-    padding: 1.5rem;
-    border-bottom: 3px solid var(--primary-color);
+    padding: 20px 0;
+    border-bottom: 2px solid #e10600;
 }
 
 .logo {
-    margin-bottom: 1rem; /* Espacio entre logo y botones */
-    font-size: 1.8rem;
-    color: var(--primary-color);
+    font-family: 'Arial Black', sans-serif;
+    color: #00d2be; /* Color verde menta de la imagen */
+    font-size: 1.5rem;
+    margin-right: 40px; /* Espacio entre logo y botones */
+    font-style: italic;
 }
 
 nav {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Para que en móviles se acomoden en varias filas */
-    gap: 15px;
+    gap: 10px;
 }
 
 nav button {
-    background: #222;
+    background: transparent;
     border: 1px solid #444;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    color: #fff;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
     cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 nav button:hover {
-    background: var(--primary-color);
-    border-color: var(--primary-color);
-}
-
-
-
-body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    background-color: var(--dark-bg);
-    background-image: 
-        radial-gradient(circle at 10% 20%, rgba(214, 0, 54, 0.1) 0%, transparent 40%),
-        url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
-    color: var(--text-white);
-    margin: 0;
-    min-height: 100vh;
+    border-color: #e10600;
+    color: #e10600;
 }
 
 
@@ -107,7 +94,7 @@ body {
     border: 1px solid var(--glass-border); display: block; 
 }
 
-/* Tablas de Clasificación */
+/* Tablas de Clasificación tanto pilotos como equipos (Se podría incluir que al hacer click en el piloto te redirija a su sección de datos de piloto) */
 .table-container {
     overflow-x: auto; background: var(--card-bg); padding: 1.5rem;
     border-radius: 16px; border: 1px solid var(--glass-border);
@@ -117,6 +104,59 @@ table { width: 100%; border-collapse: collapse; margin-top: 1rem; margin-bottom:
 th { text-align: left; color: var(--accent-color); font-size: 0.8rem; padding: 12px; border-bottom: 2px solid var(--glass-border); }
 td { padding: 12px; border-bottom: 1px solid var(--glass-border); }
 
+
+/*Banner con la foto de fondo*/
+.hero-banner {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                url('https://images.pexels.com/photos/35967/racing-car-race-car-porsche.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Asegúrate de poner la ruta correcta */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 95%;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+.hero-banner h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+/* Estilos del contador para que destaque*/
+
+.timer-display {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #e10600;
+    padding: 20px 40px;
+    display: flex;
+    gap: 30px;
+    text-align: center;
+}
+
+.time-unit {
+    display: block;
+    font-family: 'Courier New', Courier, monospace; /* Fuente digital */
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0 0 10px #e10600;
+}
+
+.time-label {
+    font-size: 0.7rem;
+    color: #e10600;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 5px;
+}
 
 
 
