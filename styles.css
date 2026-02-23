@@ -1,105 +1,80 @@
-:root {
-    --accent-color: #d60036;
-    --dark-bg: #0f1115;
-    --card-bg: rgba(26, 28, 35, 0.9);
-    --text-white: #f0f0f0;
-    --glass-border: rgba(255, 255, 255, 0.08);
-}
-
-html {
-    scroll-behavior: smooth; /* Para que al pulsar los botones baje suavemente */
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: var(--dark-bg);
-    background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
-    color: var(--text-white);
-    margin: 0;
+/* --- 1. AJUSTE DE CONTENEDOR GLOBAL --- */
+main {
+    width: 95%; /* Ocupa casi el 100% de la pantalla */
+    max-width: 1600px; /* Límite para que en monitores 4K no se deforme demasiado */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Todo al centro */
+    gap: 4rem; 
+    padding: 2rem 0;
+    margin: 0 auto;
 }
 
-/* --- NAVEGACIÓN FIJA --- */
-header {
-    background-color: rgba(15, 17, 21, 0.95);
-    backdrop-filter: blur(15px);
+/* --- 2. BANNER AUSTRALIA GIGANTE (FULL WIDTH) --- */
+.hero-banner {
     width: 100%;
-    padding: 1rem 0;
-    border-bottom: 1px solid var(--glass-border);
-    position: sticky; top: 0; z-index: 1000;
+    min-height: 60vh; /* Ocupa el 60% de la altura de la pantalla */
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://images.pexels.com/photos/3851030/pexels-photo-3851030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-nav {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-nav a {
-    text-decoration: none;
-    background: transparent; border: 1px solid var(--glass-border); color: white;
-    font-weight: 600; padding: 8px 15px; font-size: 0.75rem; border-radius: 6px;
-}
-
-/* --- CONTENEDOR ÚNICO VERTICAL --- */
-main {
-    width: 100%;
-    max-width: 800px; /* Ancho de lectura cómodo */
-    display: flex;
-    flex-direction: column;
-    gap: 5rem; /* Espacio entre secciones */
-    padding: 2rem 1rem;
-}
-
-/* Forzamos que todas las secciones sean visibles */
-.page {
-    display: flex !important; 
-    flex-direction: column;
-    width: 100%;
-}
-
-/* --- BANNER GIGANTE Y CENTRADO --- */
-.hero-banner {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                url('https://images.pexels.com/photos/3851030/pexels-photo-3851030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-size: cover; background-position: center;
-    padding: 8rem 1rem; border-radius: 20px; text-align: center;
-    border: 1px solid var(--glass-border);
+    justify-content: center;
+    border-radius: 25px;
+    box-sizing: border-box;
 }
 
 .hero-banner h2 {
-    font-size: clamp(2.5rem, 10vw, 5rem); /* TAMAÑO GIGANTE */
-    font-weight: 900; text-transform: uppercase; line-height: 1;
-    margin-bottom: 1rem;
+    font-size: clamp(3.5rem, 12vw, 8rem) !important; /* Texto masivo */
+    margin: 0;
+    letter-spacing: -3px;
 }
 
-/* --- TABLAS Y CONTENIDO --- */
-.table-container, .news-item, .gp-item {
+/* --- 3. TABLAS A LO ANCHO --- */
+.table-container {
+    width: 100%;
     background: var(--card-bg);
-    border-radius: 16px;
-    border: 1px solid var(--glass-border);
-    margin-bottom: 1.5rem;
-    width: 100%;
+    padding: 2rem;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 
-table { width: 100%; border-collapse: collapse; }
-td, th { padding: 15px; border-bottom: 1px solid var(--glass-border); }
-
-/* --- IMÁGENES --- */
-.info-img {
+table {
     width: 100%;
-    height: auto;
-    border-radius: 12px;
-    margin-top: 1rem;
+    font-size: 1.1rem; /* Texto un poco más grande para acompañar el ancho */
+}
+
+th, td {
+    padding: 20px; /* Celdas más espaciosas */
+}
+
+/* --- 4. CALENDARIO Y NOTICIAS --- */
+.gp-item, .news-item {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.info-img {
+    max-width: 800px; /* El mapa del circuito ahora puede ser mucho más grande */
+    margin: 20px auto;
 }
 
 .news-header img {
     width: 100%;
-    height: 250px;
+    max-height: 500px; /* Imágenes de noticias tipo cine */
     object-fit: cover;
+}
+
+/* --- 5. RESPONSIVO (Para que en móvil no se rompa) --- */
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+        padding: 10px;
+    }
+    .hero-banner h2 {
+        font-size: 3rem !important;
+    }
 }
