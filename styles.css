@@ -22,10 +22,10 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra el contenido principal */
+    align-items: center;
 }
 
-/* --- 2. HEADER FIJO --- */
+/* Header fijo por toda la página*/
 header {
     background-color: rgba(15, 17, 21, 0.95);
     backdrop-filter: blur(20px);
@@ -65,17 +65,17 @@ nav a {
     transition: 0.3s;
 }
 
-/* --- 3. CONTENEDOR VERTICAL (90% ANCHO) --- */
+/*  CONTENEDOR VERTICAL con un 90% de ancho de la pantalla completa */
 main {
     width: 85%;
     max-width: 1400px; /* limito para no pasarme de ancho */
     display: flex; 
     flex-direction: column;
-    gap: 4rem; /* Espacio entre secciones */
+    gap: 7rem; /* Espacio entre secciones */
     padding: 2rem 0;
 }
 
-/* Forzamos que todas las secciones sean visibles en el One Page */
+/* Para que se vea en una sola página */
 .page {
     display: flex !important; 
     flex-direction: column;
@@ -109,7 +109,7 @@ main {
     letter-spacing: -2px;
 }
 
-/* --- 5. DASHBOARD Y TARJETAS --- */
+/*Tarjetas (Inicialmente se refierían a las tarjetas de noticias y pilotos */
 .dashboard {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -131,7 +131,7 @@ main {
     background: rgba(40, 42, 50, 0.9);
 }
 
-/* --- 6. TABLAS (MÁS ANCHAS) --- */
+/* TABLAS (pilotos y clasificación)*/
 .table-container {
     background: var(--card-bg);
     padding: 2.5rem;
@@ -148,7 +148,7 @@ th {
 }
 td { padding: 18px 15px; border-bottom: 1px solid var(--glass-border); }
 
-/* --- 7. CALENDARIO Y NOTICIAS --- */
+/*  CALENDARIO Y NOTICIAS  */
 .gp-item, .news-item {
     background: var(--card-bg);
     border-radius: 15px;
@@ -162,11 +162,11 @@ td { padding: 18px 15px; border-bottom: 1px solid var(--glass-border); }
 .news-header img { width: 250px; height: 150px; border-radius: 12px; }
 
 .info-img { 
-    width: 100%; max-width: 800px; /* Mapas más grandes */
+    width: 100%; max-width: 800px;
     margin: 20px auto; border-radius: 15px; 
 }
 
-/* --- 8. FOOTER --- */
+/* parte del footer */
 footer {
     width: 100%;
     padding: 4rem 0;
@@ -189,14 +189,14 @@ footer {
 nav a, nav button {
     /* --- CAMBIA ESTO PARA DARLE TU ESTILO --- */
     text-decoration: none;
-    background: rgba(255, 255, 255, 0.1); /* Color de fondo de los botones */
-    color: blue;                         /* Color del texto */
+    background: rgba(255, 255, 255, 0.1); /* Color de fondo de los botones más o menos transparentes */
+    color: blue;                         /* Color del texto azul de inicio luego cambia*/
     font-weight: 700;
     padding: 12px 24px;
     font-size: 1.5rem;
-    border-radius: 50px;                  /* Cámbialo a 0px si los quieres cuadrados */
+    border-radius: 50px;                  
     border: 1px solid transparent;
-    transition: all 0.3s ease;            /* Suavidad de la animación */
+    transition: all 0.3s ease;            
     text-transform: uppercase;
     cursor: pointer;
     display: inline-block;
