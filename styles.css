@@ -197,6 +197,8 @@ header nav button:hover, header nav a:hover {
     transform: scale(1.05);
 }
 
+/*Estilo para los titulos de los equipos*/
+
 #AlpineCoche{
     color:pink;
 }
