@@ -40,7 +40,7 @@ header {
 }
 
 header .logo { 
-    font-weight: 900; font-size: 100.2px; letter-spacing: -1px;
+    font-weight: 900; font-size: 300.2px; letter-spacing: -1px;
     color: var(--accent-color); text-transform: uppercase;
     margin-bottom: 10px;
 }
