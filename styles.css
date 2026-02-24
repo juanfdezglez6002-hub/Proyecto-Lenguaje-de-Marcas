@@ -211,8 +211,10 @@ header nav button:hover, header nav a:hover {
     color:red;
 }
 
+/*Necesita un borde porque no se ve muy bien con su color pricipal*/
 #CadillacCoche{
     color:black;
+    text-shadow: 2px 2px 0px white;
 }
 
 #HaasCoche{
@@ -226,9 +228,10 @@ header nav button:hover, header nav a:hover {
 #MercedesCoche{
     color:grey;
 }
-
+/*Necesita un borde porque no se ve muy bien con su color pricipal*/
 #RedbullCoche{
     color:darkblue;
+    text-shadow: 2px 2px 0px white;
 }
 
 #FerrariCoche{
