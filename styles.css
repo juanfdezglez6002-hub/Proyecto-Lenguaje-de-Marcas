@@ -70,8 +70,8 @@ main {
     max-width: 1400px; /* limito para no pasarme de ancho */
     display: flex; 
     flex-direction: column;
-    gap: 7rem; /* Espacio entre secciones */
-    padding: 2rem 0;
+    gap: 115px; /* Espacio entre secciones */
+    padding: 32px 0;
 }
 
 /* Para que se vea en una sola página */
