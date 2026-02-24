@@ -213,10 +213,7 @@ header nav button:hover, header nav a:hover {
 
 /*Necesita un borde porque no se ve muy bien con su color pricipal*/
 #CadillacCoche{
-    color:black;
-    text-shadow: 2px 2px 0px white;
-    font-weight: 700; /* Letra más gruesa para que se lea mejor */
-    letter-spacing: 0.5px; /* Un poco de aire entre letras */
+    color:white;
 }
 
 #HaasCoche{
@@ -232,10 +229,7 @@ header nav button:hover, header nav a:hover {
 }
 /*Necesita un borde porque no se ve muy bien con su color pricipal*/
 #RedbullCoche{
-    color:darkblue;
-    text-shadow: 2px 2px 0px white;
-    font-weight: 700; /* Letra más gruesa para que se lea mejor */
-    letter-spacing: 0.5px; /* Un poco de aire entre letras */
+    color:blue;
 }
 
 #FerrariCoche{
@@ -247,6 +241,6 @@ header nav button:hover, header nav a:hover {
 }
 
 #WilliamsCoche{
-    color:blue;
+    color:lightblue;
 }
 
