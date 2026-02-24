@@ -82,7 +82,7 @@ main {
     animation: fadeIn 0.8s ease;
 }
 
-/* --- 4. HERO BANNER (GIGANTE) --- */
+/* HERO BANNER  */
 .hero-banner {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), 
                 url('https://images.pexels.com/photos/12795/pexels-photo-12795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
@@ -100,7 +100,7 @@ main {
 }
 
 .hero-banner h2 {
-    font-size: clamp(2.5rem, 8vw, 6rem) !important; /* TAMAÑO GIGANTE SOLICITADO */
+    font-size: clamp(2.5rem, 8vw, 6rem) !important;
     font-weight: 900;
     text-transform: uppercase;
     margin: 0;
@@ -175,10 +175,10 @@ footer {
     color: #555;
 }
 nav a, nav button {
-    /* --- CAMBIA ESTO PARA DARLE TU ESTILO --- */
+   
     text-decoration: none;
     background: rgba(255, 255, 255, 0.1); /* Color de fondo de los botones más o menos transparentes */
-    color: blue;                         /* Color del texto azul de inicio luego cambia*/
+    color: blue;                         /* Color del texto azul de inicio luego cambia al pasar por encima*/
     font-weight: 700;
     padding: 12px 24px;
     font-size: 1.5rem;
