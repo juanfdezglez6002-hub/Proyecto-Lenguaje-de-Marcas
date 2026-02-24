@@ -76,7 +76,7 @@ main {
 
 /* Para que se vea en una sola página */
 .page {
-    display: flex !important; 
+    display: flex; 
     flex-direction: column;
     width: 100%;
     animation: fadeIn 0.8s ease;
@@ -100,7 +100,7 @@ main {
 }
 
 .hero-banner h2 {
-    font-size: clamp(2.5rem, 8vw, 6rem) !important;
+    font-size: clamp(2.5rem, 8vw, 6rem);
     font-weight: 900;
     text-transform: uppercase;
     margin: 0;
