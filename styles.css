@@ -103,7 +103,6 @@ main {
     /*TEXTO PARA LOS GRANDES PREMIOS (ver si es posible aplicar algún tipo de efecto según el sitio)*/
     font size:96px;    
     font-weight: 900;
-    /*text-transform: uppercase;*/
     margin: 0;
     line-height: 0.9;
     letter-spacing: -2px;
@@ -112,7 +111,8 @@ main {
 /*Tarjetas (Inicialmente se refierían a las tarjetas de noticias y pilotos */
 .dashboard {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* 25% cada una. Siempre habrá 4 columnas en una fila. */
+    grid-template-columns: repeat(4, 25%); 
     gap: 32px;
 }
 
