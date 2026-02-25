@@ -100,12 +100,8 @@ main {
 }
 
 .hero-banner h2 {
-    /*font-size: clamp(2.5rem, 8vw, 6rem);*/
-    
-    /*font size:40px;*/
-    /*font size:64px;*/
-    font size:96px;
-    
+    /*TEXTO PARA LOS GRANDES PREMIOS (ver si es posible aplicar algún tipo de efecto según el sitio)*/
+    font size:96px;    
     font-weight: 900;
     text-transform: uppercase;
     margin: 0;
