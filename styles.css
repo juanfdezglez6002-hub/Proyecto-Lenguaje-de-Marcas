@@ -103,7 +103,7 @@ main {
     /*TEXTO PARA LOS GRANDES PREMIOS (ver si es posible aplicar algún tipo de efecto según el sitio)*/
     font size:96px;    
     font-weight: 900;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     margin: 0;
     line-height: 0.9;
     letter-spacing: -2px;
