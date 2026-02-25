@@ -1,11 +1,3 @@
-:root {
-    --accent-color: #d60036;
-    --dark-bg: #0f1115;
-    --card-bg: rgba(26, 28, 35, 0.9);
-    --text-white: #f0f0f0;
-    --glass-border: rgba(255, 255, 255, 0.12);
-}
-
 /*  Paleta de colores que voy a usar en la página (Formato en sucio)
     color rojo principal: #d60036;
     negro contraste fondo: #0f1115;
@@ -31,7 +23,7 @@ body {
     align-items: center;
 }
 
-/* Header fijo por toda la página*/
+/* Header fijo que se va a mantener por toda la página*/
 header {
     background-color: rgba(15, 17, 21, 0.95);
     backdrop-filter: blur(20px);
@@ -51,7 +43,6 @@ header .logo {
     font-size: 20px;
     letter-spacing: -1px;
     color: #d60036; 
-    text-transform: uppercase;
     margin-bottom: 10px;
 }
 
