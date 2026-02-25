@@ -168,7 +168,7 @@ td { padding: 18px 15px; border-bottom: 1px solid var(--glass-border); }
 /* parte del footer */
 footer {
     width: 100%;
-    padding: 4rem 0;
+    padding: 64px 0;
     text-align: center;
     background: #000;
     border-top: 1px solid var(--glass-border);
@@ -181,7 +181,7 @@ nav a, nav button {
     color: blue;                         /* Color del texto azul de inicio luego cambia al pasar por encima*/
     font-weight: 700;
     padding: 12px 24px;
-    font-size: 1.5rem;
+    font-size: 24px;
     border-radius: 50px;                  
     border: 1px solid transparent;
     transition: all 0.3s ease;            
@@ -211,7 +211,7 @@ header nav button:hover, header nav a:hover {
     color:red;
 }
 
-/*Necesita un borde porque no se ve muy bien con su color pricipal*/
+/*Necesita un color distinto porque no se ve muy bien con su color pricipal*/
 #CadillacCoche{
     color:white;
 }
@@ -227,7 +227,7 @@ header nav button:hover, header nav a:hover {
 #MercedesCoche{
     color:grey;
 }
-/*Necesita un borde porque no se ve muy bien con su color pricipal*/
+/*Necesita un color distinto porque no se ve muy bien con su color pricipal*/
 #RedbullCoche{
     color:blue;
 }
