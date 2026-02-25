@@ -179,7 +179,7 @@ nav a, nav button {
    
     text-decoration: none;
     background: rgba(255, 255, 255, 0.1); /* Color de fondo de los botones más o menos transparentes */
-    color: blue;                         /* Color del texto azul de inicio luego cambia al pasar por encima*/
+    color:lightblue;                         /* Color del texto azul claro de inicio luego cambia al pasar por encima*/
     font-weight: 700;
     padding: 12px 24px;
     font-size: 24px;
