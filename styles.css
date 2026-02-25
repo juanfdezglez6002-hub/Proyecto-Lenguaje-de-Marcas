@@ -134,7 +134,7 @@ main {
 /* TABLAS (pilotos y clasificación)*/
 .table-container {
     background: var(--card-bg);
-    padding: 2.5rem;
+    padding: 40px;
     border-radius: 24px;
     border: 1px solid var(--glass-border);
     overflow-x: auto;
