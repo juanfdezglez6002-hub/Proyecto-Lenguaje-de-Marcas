@@ -96,7 +96,7 @@ main {
     border-radius: 30px;
     text-align: center;
     border: 1px solid var(--glass-border);
-    padding: 2rem;
+    padding: 32px;
 }
 
 .hero-banner h2 {
@@ -113,12 +113,12 @@ main {
 .dashboard {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    gap: 32px;
 }
 
 .menu-card {
     background: var(--card-bg);
-    padding: 3rem 2rem;
+    padding: 48px 32px;
     border-radius: 20px;
     border: 1px solid var(--glass-border);
     transition: 0.4s;
