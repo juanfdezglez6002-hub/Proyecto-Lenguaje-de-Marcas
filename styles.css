@@ -30,7 +30,7 @@ body {
 /* Header fijo que se va a mantener por toda la página*/
 header {
     background-color: rgba(15, 17, 21, 0.95);
-    backdrop-filter: blur(20px);
+    /*backdrop-filter: blur(20px);*/
     width: 100%;
     padding: 20px 0;
     display: flex;
