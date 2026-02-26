@@ -104,14 +104,16 @@ main {
     padding: 32px;
 }
 
+/* SALE UN ERROR EN ESTA PARTE, FALTA POR IDENTIFICAR EL ERROR PARA EVITAR ESTE ERROR EN EFECTO DOMINO 
 .hero-banner h2 {
     /*TEXTO PARA LOS GRANDES PREMIOS (ver si es posible aplicar algún tipo de efecto según el sitio)*/
-    font size:96px;    
+/*    font size:96px;    
     font-weight: 900;
     margin: 0;
     line-height: 0.9;
     letter-spacing: -2px;
 }
+*/
 
 /*Tarjetas (Inicialmente se refierían a las tarjetas de noticias y pilotos */
 /*Una columna ocupará el 100% del ancho */
@@ -248,4 +250,3 @@ header nav button:hover, header nav a:hover {
 #WilliamsCoche{
     color:lightblue;
 }
-
