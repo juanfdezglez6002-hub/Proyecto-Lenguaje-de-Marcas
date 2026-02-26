@@ -253,3 +253,10 @@ header nav button:hover, header nav a:hover {
 #AlpineNombre{
     color:#e4007c;
 }
+
+#AstonNombre{
+    color:darkgreen;
+}
+#AudiNombre{
+    color:red;
+}
