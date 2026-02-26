@@ -114,10 +114,10 @@ main {
 }
 
 /*Tarjetas (Inicialmente se refierían a las tarjetas de noticias y pilotos */
+/*Una columna ocupará el 100% del ancho */
 .dashboard {
     display: grid;
-    /* 25% cada una. Siempre habrá 4 columnas en una fila. */
-    grid-template-columns: repeat(4, 25%); 
+    grid-template-columns: repeat(1, 100%); 
     gap: 32px;
 }
 
