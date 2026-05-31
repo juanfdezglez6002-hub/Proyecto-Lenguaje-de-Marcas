@@ -295,9 +295,5 @@ header nav button:hover, header nav a:hover {
 header {
     z-index: 1000;
 }
-.modal-dialog {
-    margin: auto;
-    top: 50%;
-    transform: translateY(-50%);
-}
+
 
