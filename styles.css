@@ -297,3 +297,10 @@ header {
 }
 
 
+/* Estado inicial de la tabla de equipos para que no se vea*/
+
+.oculto {
+    display: none;
+}
+
+
