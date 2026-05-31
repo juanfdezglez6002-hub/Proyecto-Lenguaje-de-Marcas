@@ -252,297 +252,550 @@
             </div>
         </section>
 
-        <section id="calendario">
-            <h1>Calendario de Temporada</h1>
-            <div class="gp-item">
-                <details> 
-                 <strong>Melbourne, Australia</strong> - 15 Marzo
-                <div id="c1" class="circuit-info">
+<section id="calendario">
+    <h1>Calendario de Temporada</h1>
+
+    <!-- Botones -->
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalAustralia"><strong>Melbourne, Australia</strong> - 15 Marzo</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalChina"><strong>Shanghái, China</strong> - 13 Marzo // 15 Marzo</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalJapon"><strong>Suzuka, Japón</strong> - 27 Marzo // 29 Marzo</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalBarein"><strong>Sakhir, Baréin</strong> - 10 Abril // 12 Abril</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalArabia"><strong>Yeda, Arabia Saudita</strong> - 17 Abril // 19 Abril</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalMiami"><strong>Miami, Estados Unidos</strong> - 1 Mayo // 3 Mayo</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalCanada"><strong>Montreal, Canadá</strong> - 22 Mayo // 24 Mayo</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalMonaco"><strong>Montecarlo, Mónaco</strong> - 5 Junio // 7 Junio</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalEspana"><strong>Barcelona, España</strong> - 12 Junio // 14 Junio</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalAustria"><strong>Spielberg, Austria</strong> - 26 Junio // 28 Junio</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalGranBretana"><strong>Inglaterra, Gran Bretaña</strong> - 3 Julio // 5 Julio</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalBelgica"><strong>Spa-Francorchamps, Bélgica</strong> - 17 Julio // 19 Julio</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalHungria"><strong>Mogyoród, Hungría</strong> - 24 Julio // 26 Julio</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalHolanda"><strong>Haarlem, Países Bajos</strong> - 21 Agosto // 23 Agosto</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalItalia"><strong>Monza, Italia</strong> - 4 Septiembre // 6 Septiembre</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalMadrid"><strong>Madrid, España</strong> - 11 Septiembre // 13 Septiembre</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalBaku"><strong>Bakú, Azerbaiyán</strong> - 24 Septiembre // 26 Septiembre</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalSingapur"><strong>Marina Bay, Singapur</strong> - 9 Octubre // 11 Octubre</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalAustin"><strong>Austin, Estados Unidos</strong> - 23 Octubre // 25 Octubre</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalMexico"><strong>Ciudad de México, México</strong> - 30 Octubre // 1 Noviembre</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalBrasil"><strong>São Paulo, Brasil</strong> - 6 Noviembre // 8 Noviembre</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalLasVegas"><strong>Las Vegas, Estados Unidos</strong> - 19 Noviembre // 21 Noviembre</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalQatar"><strong>Lusail, Qatar</strong> - 27 Noviembre // 29 Noviembre</button></div>
+    <div class="gp-item"><button type="button" data-bs-toggle="modal" data-bs-target="#modalAbuDhabi"><strong>Isla de Yas, Abu Dhabi</strong> - 4 Diciembre // 6 Diciembre</button></div>
+
+    <!-- Modales -->
+    <div class="modal fade" id="modalAustralia" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Melbourne, Australia — 15 Marzo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
                     <strong>Circuito:</strong> Albert Park<br>
                     <strong>Longitud:</strong> 5.278 km<br>
                     <strong>Vueltas:</strong> 58<br>
                     <strong>Detalle:</strong> Circuito semi-urbano conocido por su alta velocidad.<br>
                     <img src="Circuito_Australia_Sectores.png" class="info-img" alt="Mapa Albert Park">
                 </div>
-                </details> 
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details> 
-                 <strong>Shanghái, China</strong> - 13 Marzo // 15 Marzo
-                <div id="c2" class="circuit-info">
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalChina" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Shanghái, China — 13 Marzo // 15 Marzo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
                     <strong>Circuito:</strong> Circuito Internacional de Shanghái<br>
-                    <strong>Longitud:</strong>  5,451 km<br>
+                    <strong>Longitud:</strong> 5.451 km<br>
                     <strong>Vueltas:</strong> 56<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Shanghai">
                 </div>
-                </details> 
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details> 
-                 <strong>Shanghái, Japón</strong> - 27 Marzo // 29 Marzo
-                <div id="c3" class="circuit-info">
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalJapon" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Suzuka, Japón — 27 Marzo // 29 Marzo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
                     <strong>Circuito:</strong> Circuito Internacional de Shanghái<br>
-                    <strong>Longitud:</strong>  5,451 km<br>
+                    <strong>Longitud:</strong> 5.451 km<br>
                     <strong>Vueltas:</strong> 56<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Suzuka">
                 </div>
-                </details> 
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details> 
-                 <strong>Sakhir, Baréin</strong> - 10 Abril // 12 Abril
-                <div id="c4" class="circuit-info">
-                    <strong>Circuito:</strong> Circuito Internacional de Shanghái<br>
-                    <strong>Longitud:</strong>  5,451 km<br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalBarein" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Sakhir, Baréin — 10 Abril // 12 Abril</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Circuito:</strong> Circuito Internacional de Baréin<br>
+                    <strong>Longitud:</strong> 5.451 km<br>
                     <strong>Vueltas:</strong> 56<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Barein">
                 </div>
-                </details> 
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details> 
-                 <strong>Yeda, Arabia Saudita</strong> - 17 Abril // 19 Abril
-                <div id="c5" class="circuit-info">
-                    <strong>Circuito:</strong> Circuito Internacional de Shanghái<br>
-                    <strong>Longitud:</strong>  5,451 km<br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalArabia" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Yeda, Arabia Saudita — 17 Abril // 19 Abril</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Circuito:</strong> Circuito de Jeddah<br>
+                    <strong>Longitud:</strong> 5.451 km<br>
                     <strong>Vueltas:</strong> 56<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Jeddah">
                 </div>
-                </details> 
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details> 
-                 <strong>Miami, Estados Unidos</strong> - 1 Mayo // 3 Mayo
-                <div id="c6" class="circuit-info">
-                    <strong>Circuito:</strong> Circuito Internacional de Shanghái<br>
-                    <strong>Longitud:</strong>  5,451 km<br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalMiami" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Miami, Estados Unidos — 1 Mayo // 3 Mayo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Circuito:</strong> Miami International Autodrome<br>
+                    <strong>Longitud:</strong> 5.451 km<br>
                     <strong>Vueltas:</strong> 56<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Miami">
                 </div>
-                </details> 
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details> 
-                 <strong>Montreal, Canadá</strong> - 22 Mayo // 24 Mayo
-                <div id="c7" class="circuit-info">
-                    <strong>Circuito:</strong> Circuito Internacional de Shanghái<br>
-                    <strong>Longitud:</strong>  5,451 km<br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCanada" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Montreal, Canadá — 22 Mayo // 24 Mayo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Circuito:</strong> Circuito Gilles Villeneuve<br>
+                    <strong>Longitud:</strong> 5.451 km<br>
                     <strong>Vueltas:</strong> 56<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montreal">
                 </div>
-                </details> 
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details> 
-                 <strong>Montecarlo, Mónaco</strong> - 5 Junio // 7 Junio
-                <div id="c8" class="circuit-info">
-                    <strong>Circuito:</strong> Circuito Internacional de Shanghái<br>
-                    <strong>Longitud:</strong>  5,451 km<br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalMonaco" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Montecarlo, Mónaco — 5 Junio // 7 Junio</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Circuito:</strong> Circuito de Mónaco<br>
+                    <strong>Longitud:</strong> 5.451 km<br>
                     <strong>Vueltas:</strong> 56<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Monaco">
                 </div>
-                </details> 
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details> 
-                 <strong>Barcelona, España</strong> - 12 Junio // 14 Junio
-                <div id="c9" class="circuit-info">
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalEspana" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Barcelona, España — 12 Junio // 14 Junio</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
                     <strong>Circuito:</strong> Barcelona-Catalunya<br>
                     <strong>Longitud:</strong> 4.657 km<br>
                     <strong>Vueltas:</strong> 66<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmelo">
                 </div>
-                </details> 
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details> 
-                 <strong>Spielberg, Austria</strong> - 26 Junio // 28 Junio
-                <div id="c10" class="circuit-info">
-                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
-                    <strong>Longitud:</strong> 4.657 km<br>
-                    <strong>Vueltas:</strong> 66<br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAustria" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Spielberg, Austria — 26 Junio // 28 Junio</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Circuito:</strong> Red Bull Ring<br>
+                    <strong>Longitud:</strong> 4.318 km<br>
+                    <strong>Vueltas:</strong> 71<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Austria">
                 </div>
-                </details> 
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details> 
-                 <strong>Inglaterra, Gran Bretaña</strong> - 3 Julio // 5 Julio
-                <div id="c11" class="circuit-info">
-                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
-                    <strong>Longitud:</strong> 4.657 km<br>
-                    <strong>Vueltas:</strong> 66<br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalGranBretana" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Inglaterra, Gran Bretaña — 3 Julio // 5 Julio</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Circuito:</strong> Silverstone<br>
+                    <strong>Longitud:</strong> 5.891 km<br>
+                    <strong>Vueltas:</strong> 52<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Silverstone">
                 </div>
-                </details> 
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details> 
-                 <strong>Spa-Francorchamps, Bélgica</strong> - 17 Julio // 19 Julio
-                <div id="c12" class="circuit-info">
-                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
-                    <strong>Longitud:</strong> 4.657 km<br>
-                    <strong>Vueltas:</strong> 66<br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalBelgica" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Spa-Francorchamps, Bélgica — 17 Julio // 19 Julio</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Circuito:</strong> Circuit de Spa-Francorchamps<br>
+                    <strong>Longitud:</strong> 7.004 km<br>
+                    <strong>Vueltas:</strong> 44<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Spa">
                 </div>
-                </details> 
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details> 
-                 <strong>Mogyoród, Hungría</strong> - 24 Julio // 26 Julio
-                <div id="c13" class="circuit-info">
-                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
-                    <strong>Longitud:</strong> 4.657 km<br>
-                    <strong>Vueltas:</strong> 66<br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalHungria" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Mogyoród, Hungría — 24 Julio // 26 Julio</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Circuito:</strong> Hungaroring<br>
+                    <strong>Longitud:</strong> 4.381 km<br>
+                    <strong>Vueltas:</strong> 70<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Hungaroring">
                 </div>
-                </details> 
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details> 
-                 <strong>Haarlem, Paises Bajos</strong> - 21 Agosto // 23 Agosto
-                <div id="c14" class="circuit-info">
-                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
-                    <strong>Longitud:</strong> 4.657 km<br>
-                    <strong>Vueltas:</strong> 66<br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalHolanda" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Haarlem, Países Bajos — 21 Agosto // 23 Agosto</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Circuito:</strong> Circuit Zandvoort<br>
+                    <strong>Longitud:</strong> 4.259 km<br>
+                    <strong>Vueltas:</strong> 72<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Zandvoort">
                 </div>
-                </details> 
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details> 
-                 <strong>Monza, Italia</strong> - 4 Septiembre // 6 Septiembre
-                <div id="c15" class="circuit-info">
-                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
-                    <strong>Longitud:</strong> 4.657 km<br>
-                    <strong>Vueltas:</strong> 66<br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalItalia" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Monza, Italia — 4 Septiembre // 6 Septiembre</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Circuito:</strong> Autodromo Nazionale Monza<br>
+                    <strong>Longitud:</strong> 5.793 km<br>
+                    <strong>Vueltas:</strong> 53<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Monza">
                 </div>
-                </details> 
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details> 
-                <strong>Madrid, España</strong> - 11 Septiembre // 13 Septiembre
-                <div id="c16" class="circuit-info">
-                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
-                    <strong>Longitud:</strong> 4.657 km<br>
-                    <strong>Vueltas:</strong> 66<br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalMadrid" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Madrid, España — 11 Septiembre // 13 Septiembre</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Circuito:</strong> Circuito de Madrid<br>
+                    <strong>Longitud:</strong> 5.451 km<br>
+                    <strong>Vueltas:</strong> 56<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Madrid">
                 </div>
-                </details> 
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details> 
-                 <strong>Bakú, Azerbaiyán</strong> - 24 Septiembre // 26 Septiembre
-                <div id="c17" class="circuit-info">
-                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
-                    <strong>Longitud:</strong> 4.657 km<br>
-                    <strong>Vueltas:</strong> 66<br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalBaku" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Bakú, Azerbaiyán — 24 Septiembre // 26 Septiembre</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Circuito:</strong> Baku City Circuit<br>
+                    <strong>Longitud:</strong> 6.003 km<br>
+                    <strong>Vueltas:</strong> 51<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Baku">
                 </div>
-                </details> 
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details>
-                 <strong>Marina Bay, Singapur</strong> - 9 Octubre // 11 Octubre
-                <div id="c18" class="circuit-info">
-                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
-                    <strong>Longitud:</strong> 4.657 km<br>
-                    <strong>Vueltas:</strong> 66<br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalSingapur" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Marina Bay, Singapur — 9 Octubre // 11 Octubre</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Circuito:</strong> Marina Bay Street Circuit<br>
+                    <strong>Longitud:</strong> 4.940 km<br>
+                    <strong>Vueltas:</strong> 62<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Singapur">
                 </div>
-                </details>
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details>
-                 <strong>Austin, Estados Unidos</strong> - 23 Octubre // 25 Octubre
-                <div id="c19" class="circuit-info">
-                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
-                    <strong>Longitud:</strong> 4.657 km<br>
-                    <strong>Vueltas:</strong> 66<br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAustin" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Austin, Estados Unidos — 23 Octubre // 25 Octubre</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Circuito:</strong> Circuit of The Americas<br>
+                    <strong>Longitud:</strong> 5.513 km<br>
+                    <strong>Vueltas:</strong> 56<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa COTA">
                 </div>
-                </details>
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details>
-                 <strong>Ciudad de México, México</strong> - 30 Octubre // 1 Noviembre
-                <div id="c20" class="circuit-info">
-                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
-                    <strong>Longitud:</strong> 4.657 km<br>
-                    <strong>Vueltas:</strong> 66<br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalMexico" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Ciudad de México, México — 30 Octubre // 1 Noviembre</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Circuito:</strong> Autodromo Hermanos Rodriguez<br>
+                    <strong>Longitud:</strong> 4.304 km<br>
+                    <strong>Vueltas:</strong> 71<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Mexico">
                 </div>
-                </details>
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details>
-                 <strong>São Paulo, Brasil</strong> - 6 Noviembre // 8 Noviembre
-                <div id="c21" class="circuit-info">
-                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
-                    <strong>Longitud:</strong> 4.657 km<br>
-                    <strong>Vueltas:</strong> 66<br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalBrasil" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">São Paulo, Brasil — 6 Noviembre // 8 Noviembre</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Circuito:</strong> Autodromo Jose Carlos Pace<br>
+                    <strong>Longitud:</strong> 4.309 km<br>
+                    <strong>Vueltas:</strong> 71<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Interlagos">
                 </div>
-                </details>
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details>
-                 <strong>Las Vegas, Estados Unidos</strong> - 19 Noviembre // 21 Noviembre
-                <div id="c22" class="circuit-info">
-                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
-                    <strong>Longitud:</strong> 4.657 km<br>
-                    <strong>Vueltas:</strong> 66<br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalLasVegas" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Las Vegas, Estados Unidos — 19 Noviembre // 21 Noviembre</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Circuito:</strong> Las Vegas Street Circuit<br>
+                    <strong>Longitud:</strong> 6.201 km<br>
+                    <strong>Vueltas:</strong> 50<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Las Vegas">
                 </div>
-                </details>
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details>
-                 <strong>Lusail, Qatar</strong> - 27 Noviembre // 29 Noviembre
-                <div id="c23" class="circuit-info">
-                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
-                    <strong>Longitud:</strong> 4.657 km<br>
-                    <strong>Vueltas:</strong> 66<br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalQatar" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Lusail, Qatar — 27 Noviembre // 29 Noviembre</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Circuito:</strong> Lusail International Circuit<br>
+                    <strong>Longitud:</strong> 5.380 km<br>
+                    <strong>Vueltas:</strong> 57<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Qatar">
                 </div>
-                </details>
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="gp-item">
-                <details>
-                 <strong>Isla de Yas, Abu Dhabi</strong> - 4 Diciembre // 6 Diciembre
-                <div id="c24" class="circuit-info">
-                    <strong>Circuito:</strong> Barcelona-Catalunya<br>
-                    <strong>Longitud:</strong> 4.657 km<br>
-                    <strong>Vueltas:</strong> 66<br>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAbuDhabi" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #1a1c23; color: #f0f0f0; border: 1px solid rgba(255,255,255,0.25);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.25);">
+                    <h5 class="modal-title" style="color: #d60036;">Isla de Yas, Abu Dhabi — 4 Diciembre // 6 Diciembre</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>Circuito:</strong> Yas Marina Circuit<br>
+                    <strong>Longitud:</strong> 5.281 km<br>
+                    <strong>Vueltas:</strong> 58<br>
                     <strong>Detalle:</strong> El trazado de referencia técnica para todos los equipos.<br>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Montmeló">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Catalunya.svg/400px-Catalunya.svg.png" class="info-img" alt="Mapa Abu Dhabi">
                 </div>
-                </details>
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.25);">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-        </section>
+        </div>
+    </div>
+
+</section>      
+
+
+
+
+
+
+
+ 
+
         <section id="noticias">
             <h1>Últimas Noticias</h1>
             <div class="news-container">
