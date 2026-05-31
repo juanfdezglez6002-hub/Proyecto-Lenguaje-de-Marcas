@@ -10,6 +10,10 @@
     bordes blancos difuminados chulos: rgba(255, 255, 255, 0.25);
 */
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth; /* vuelve al menu de inicio para que el formato de una sola página vuelva al principio */
 }
@@ -32,7 +36,7 @@ header {
     background-color: rgba(15, 17, 21, 0.95);
     /*backdrop-filter: blur(20px);*/
     width: 100%;
-    padding: 20px 0;
+    padding: 1.5em 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,15 +48,15 @@ header {
 
 header .logo { 
     font-weight: 900; 
-    font-size: 20px;
+    font-size: 1.5em;
     letter-spacing: -1px;
     color: #d60036; 
-    margin-bottom: 10px;
+    margin-bottom: 0.75em;
 }
 
 nav {
     display: flex;
-    gap: 10px;
+    gap: 0.75em;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -93,7 +97,7 @@ main {
                 url('https://images.pexels.com/photos/12795/pexels-photo-12795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
     background-position: center;
-    min-height: 550px;
+    min-height: 35em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,7 +105,7 @@ main {
     border-radius: 30px;
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.25);
-    padding: 32px;
+    padding: 5em;
 }
 
 /* SALE UN ERROR EN ESTA PARTE, FALTA POR IDENTIFICAR EL ERROR PARA EVITAR ESTE ERROR EN EFECTO DOMINO 
@@ -120,12 +124,12 @@ main {
 .dashboard {
     display: grid;
     grid-template-columns: repeat(1, 100%); 
-    gap: 32px;
+    gap: 2em;
 }
 
 .menu-card {
     background: rgba(26, 28, 35, 0.9);
-    padding: 48px 32px;
+    padding: 6em 5em;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     transition: 0.4s;
@@ -144,6 +148,7 @@ main {
     padding: 40px;
     border-radius: 24px;
     border: 1px solid rgba(255, 255, 255, 0.25);
+    overflow-x: auto;
 }
 
 table { width: 100%; border-collapse: collapse; font-size: 17px; }
@@ -164,8 +169,18 @@ td { padding: 18px 15px; border-bottom: 1px solid rgba(255, 255, 255, 0.25); }
     transition: 0.3s;
 }
 
-.news-header { display: flex; align-items: center; gap: 32px; }
-.news-header img { width: 250px; height: 150px; border-radius: 12px; }
+.news-header { 
+    display: flex; 
+    align-items: center; 
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.news-header img { 
+    width: 250px;
+    height: 150px; 
+    border-radius: 12px; 
+}
 
 .info-img { 
     width: 100%; max-width: 800px;
@@ -175,7 +190,7 @@ td { padding: 18px 15px; border-bottom: 1px solid rgba(255, 255, 255, 0.25); }
 /* parte del footer */
 footer {
     width: 100%;
-    padding: 64px 0;
+    padding: 6em 0;
     text-align: center;
     background: #000;
     border-top: 1px solid rgba(255, 255, 255, 0.25);
@@ -311,7 +326,7 @@ header {
     width: 100%;
     text-align: left;
     padding: 0;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 .modal-content {
