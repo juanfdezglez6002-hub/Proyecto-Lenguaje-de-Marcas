@@ -314,4 +314,6 @@ header {
     font-size: 1rem;
 }
 
-
+.modal-title {
+    color: #d60036;
+}
