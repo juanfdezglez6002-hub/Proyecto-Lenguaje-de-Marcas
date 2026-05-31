@@ -314,6 +314,16 @@ header {
     font-size: 1rem;
 }
 
-modal-header .modal-title {
+.modal-content {
+    background-color: #1a1c23;
+    color: #f0f0f0;
+    border: 1px solid rgba(255,255,255,0.25);
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+
+.modal-title {
     color: #d60036;
 }
