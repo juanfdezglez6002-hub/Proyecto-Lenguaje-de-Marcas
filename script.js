@@ -3,15 +3,15 @@ let tablaEquipos = document.querySelector(".ranking-grid .table-container:nth-of
 let btnPilotos = document.querySelector("#btnPilotos");
 let btnEquipos = document.querySelector("#btnEquipos");
 
-// Estado inicial: mostramos pilotos, ocultamos equipos
-tablaEquipos.style.display = "none";
+/* Empieza la tabla de equipos en oculto para que solo se vea la de pilotos por defecto y luego ya se pueda cambiar */
+tablaEquipos.classList.add("oculto");
 
 btnPilotos.addEventListener("click", function() {
-    tablaPilotos.style.display = "block";
-    tablaEquipos.style.display = "none";
+    tablaPilotos.classList.remove("oculto");
+    tablaEquipos.classList.add("oculto");
 });
 
 btnEquipos.addEventListener("click", function() {
-    tablaEquipos.style.display = "block";
-    tablaPilotos.style.display = "none";
+    tablaEquipos.classList.remove("oculto");
+    tablaPilotos.classList.add("oculto");
 });
