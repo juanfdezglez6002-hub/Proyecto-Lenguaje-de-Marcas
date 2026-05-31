@@ -287,9 +287,12 @@ header nav button:hover, header nav a:hover {
 
 /* Centrado del modal para que se vea bien*/
 .modal {
-    z-index: 9999;
+    z-index: 99999 !important;
 }
 .modal-backdrop {
-    z-index: 9998;
+    z-index: 99998 !important;
+}
+header {
+    z-index: 1000;
 }
 
