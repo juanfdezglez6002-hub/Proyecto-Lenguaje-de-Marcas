@@ -51,7 +51,7 @@ header .logo {
     font-size: 1.5em;
     letter-spacing: -1px;
     color: #d60036; 
-    margin-bottom: 0.75em;
+    margin-bottom: 0.5em;
 }
 
 nav {
@@ -75,11 +75,11 @@ nav a {
 
 /*  CONTENEDOR VERTICAL con un 90% de ancho de la pantalla completa */
 main {
-    width: 85%;
+    width: 90%;
     max-width: 1400px; /* limito para no pasarme de ancho */
     display: flex; 
     flex-direction: column;
-    gap: 115px; /* Espacio entre secciones */
+    gap: 50px; /* Espacio entre secciones */
     padding: 32px 0;
 }
 
@@ -97,15 +97,15 @@ main {
                 url('https://images.pexels.com/photos/12795/pexels-photo-12795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
     background-position: center;
-    min-height: 35em;
+    min-height: 25em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    padding: 5em;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    padding: 2em 1em;
 }
 
 /* SALE UN ERROR EN ESTA PARTE, FALTA POR IDENTIFICAR EL ERROR PARA EVITAR ESTE ERROR EN EFECTO DOMINO 
@@ -129,7 +129,7 @@ main {
 
 .menu-card {
     background: rgba(26, 28, 35, 0.9);
-    padding: 6em 5em;
+    padding: 3em 1.5em;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     transition: 0.4s;
@@ -172,14 +172,17 @@ td { padding: 18px 15px; border-bottom: 1px solid rgba(255, 255, 255, 0.25); }
 .news-header { 
     display: flex; 
     align-items: center; 
+    justify-content: center;
+    text-align: center;
     gap: 32px;
     flex-wrap: wrap;
 }
 
 .news-header img { 
-    width: 250px;
+    width: 100%;
     height: 150px; 
     border-radius: 12px; 
+    height: auto;
 }
 
 .info-img { 
@@ -202,9 +205,9 @@ nav a, nav button {
     background: rgba(255, 255, 255, 0.1); /* Color de fondo de los botones más o menos transparentes */
     color:lightblue;                         /* Color del texto azul claro de inicio luego cambia al pasar por encima*/
     font-weight: 700;
-    padding: 12px 24px;
-    font-size: 24px;
-    border-radius: 50px;                  
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 20px;                  
     border: 1px solid transparent;
     transition: all 0.3s ease;            
     text-transform: uppercase;
@@ -309,6 +312,7 @@ header nav button:hover, header nav a:hover {
 }
 header {
     z-index: 1000;
+    padding: 1em 0.5em;
 }
 
 
